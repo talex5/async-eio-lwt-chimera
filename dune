@@ -1,0 +1,3 @@
+(vendored_dirs async_eio lwt_eio)
+
+(mdx (packages async_eio lwt_eio eio eio_main))

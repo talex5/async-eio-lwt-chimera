@@ -1,0 +1,6 @@
+[submodule "async_eio"]
+	path = async_eio
+	url = https://github.com/talex5/async_eio.git
+[submodule "lwt_eio"]
+	path = lwt_eio
+	url = https://github.com/talex5/lwt_eio.git
