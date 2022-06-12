@@ -8,6 +8,8 @@ The test application:
 
 - Runs an Eio client that tries using it.
 
+All code runs in a single domain, and tasks from the three systems are scheduled cooperatively with each other.
+
 This README.md file can be executed with ocaml-mdx to test the code:
 
 ```
