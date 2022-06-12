@@ -144,8 +144,7 @@ let run_client ~net ~port request =
   let flow = Eio.Net.connect ~sw net addr in
   Eio.Flow.copy_string (request ^ "\n") flow;
   Eio.Flow.shutdown flow `Send;
-  let r = Eio.Buf_read.of_flow flow ~max_size:max_int in
-  Eio.Buf_read.take_all r
+  Eio.Buf_read.(parse_exn take_all) flow ~max_size:max_int
 ```
 
 ## The main function
